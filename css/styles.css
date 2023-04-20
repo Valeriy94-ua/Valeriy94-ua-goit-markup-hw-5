@@ -217,7 +217,8 @@ button {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--accent-text)
+    color: var(--accent-text);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-bezier);
     transition-delay: 0;
@@ -253,6 +254,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--address-link-text);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-bezier);
     transition-delay: 0;
@@ -313,6 +315,7 @@ button {
     box-shadow: 0px 4px 4px var(--hero-box-shadow);
     border-radius: 4px;
     cursor: pointer;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-bezier);
     transition-delay: 0;
@@ -474,6 +477,7 @@ button {
     height: 40px;
     background-color: var(--accent-color);
     border-radius: 50%;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-bezier);
     transition-delay: 0;
@@ -521,6 +525,7 @@ button {
     border: 1px solid var(--gray-hover);
     border-radius: 4px;
     color: var(--gray-hover);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-bezier);
     transition-delay: 0;
@@ -623,6 +628,7 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-bezier);
     transition-delay: 0;
@@ -672,6 +678,7 @@ button {
     color: var(--accent-color);
     border-radius: 4px;
     background-color: var(--menu-background-normal);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-bezier);
     transition-delay: 0;
@@ -704,6 +711,7 @@ button {
 .icons-link-img:hover,
 .icons-link-img:focus {
     box-shadow: var(--portfolio-card-shadow);
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-bezier);
     transition-delay: 0;
@@ -723,8 +731,7 @@ button {
     width: 100%;
     height: 100%;
     background-color: var(--accent-color);
-
-
+    transition-property: transform;
     transform: translatey(100%);
     transition: transform 250ms ;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -795,6 +802,7 @@ button {
     max-width: 408px;
     width: 100%;
     min-height: 576px;
+    transition-property: tranform;
     transition: transform 250ms linear;
     border-radius: 4px;
     box-shadow: var(--modal-shadow);
@@ -822,6 +830,7 @@ button {
 .close-modal:focus {
     fill: var(--usual-white);
     background-color: var(--menu-background-hover);
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--transition-bezier);
     transition-delay: 0;
