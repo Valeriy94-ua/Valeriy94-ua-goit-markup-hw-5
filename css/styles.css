@@ -655,7 +655,7 @@ button {
     color: var(--accent-color);
     border-radius: 4px;
     background-color: var(--menu-background-normal);
-    transition: color var(--transition-bezier);
+    transition: color var(--transition-bezier), background-color var(--transition-bezier), border-color var(--transition-bezier), box-shadow var(--transition-bezier);
 }
 
 .menu-button:hover,
@@ -722,7 +722,7 @@ button {
     padding: 32px 16px;
     border: 1px solid var(--border-menu-button);
     border-top: none;
-    transition: var(--transition-bezier);
+    transition: border-color var(--transition-bezier);
 }
 
 .menu-border:hover,
@@ -771,8 +771,7 @@ button {
     max-width: 408px;
     width: 100%;
     min-height: 576px;
-    transition-property: tranform;
-    transition: transform var;
+    transition: transform var(--transition-bezier) ;
     border-radius: 4px;
     box-shadow: var(--modal-shadow);
 }
